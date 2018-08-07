@@ -1,0 +1,40 @@
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	outline: none;
+}
+.footer-main-div{
+	width: auto;
+	height: auto;
+	margin: auto;
+	background: #222;
+	padding: 20px 0px;
+}
+
+.footer-bottom{
+	width: 550;
+	height: auto;
+    margin: auto;
+    background: #5D991A;
+    padding: 10px;
+}
+.footer-bottom p{
+	font-family: "Helvetica", sans-serif;
+	font-size: 14px;
+	text-align: center;
+	color: white;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.footer-bottom p a{
+	color: white;
+}
+.footer-bottom p a:hover{
+	color: #222;
+}
+.link {
+}

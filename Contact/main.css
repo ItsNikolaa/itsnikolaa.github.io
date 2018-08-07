@@ -1,0 +1,34 @@
+.main-header-div {
+	width: auto;
+	height: 664;
+	background: #f2f2f2;
+	margin: auto;
+}
+.main-header{
+	width: 900;
+	height: 650;
+	margin: auto;
+	background: white;
+}
+.main-header hr{
+	font-weight:bold
+}
+.main h1 {
+	padding: 30px;
+	padding-top: 60;
+}
+.text {
+
+	font-family: "calibri", Garamond, 'Comic Sans MS';
+	font-weight: bold;
+}
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.txt {
+	padding-bottom: 50;
+	font-family: "calibri", Garamond, 'Comic Sans MS';
+	font-weight: bold;
+}
