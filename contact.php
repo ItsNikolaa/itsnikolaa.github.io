@@ -47,7 +47,7 @@ if (isset($_POST['fname']) && isset($_POST['country']) && isset($_POST['email'])
                <li><a href=""></a></li>
                <li><href="#">&emsp;&emsp;&emsp;&emsp;</li>
                <li><href="#">&emsp;</li>
-               <li><a href="contact.html">Kontakt</a></li>
+               <li><a href="contact.php">Kontakt</a></li>
                <li><href="#">&emsp;&emsp;&emsp;&emsp;</li>
                <li><href="#">&emsp;&emsp;</li>
            </ul>
