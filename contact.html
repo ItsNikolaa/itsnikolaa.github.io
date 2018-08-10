@@ -1,3 +1,33 @@
+<?php
+
+if (isset($_POST['fname']) && isset($_POST['country']) && isset($_POST['email']) && isset($_POST['message'])){
+if (!empty($_POST['fname']) && !empty($_POST['country']) && !empty($_POST['email']) && !empty($_POST['message'])){
+ $fname = $_POST['fname'];
+ $country = $_POST['country'];
+ $email = $_POST['email'];
+ $message = $_POST['message'];
+
+ if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
+  echo 'kindly Provide Valid Email';
+ } else {
+  $body = $fname."\n".$country."\n".$email."\n".$message;
+  if(mail('nikolanedeljkovic.official@gmail.com ', 'Your Subject ', $body , 'From: nikola.response@gmail.com')){
+   echo '<color font="black">Thanks for your contacting.</font>';
+  } else {
+   echo 'There is a problem in sending mail.';
+  }
+ }
+
+ } else {
+  echo 'ALL Fields are required.';
+ }
+}   else {
+ echo 'ok';
+}
+
+?>
+
+<!DOCTYPE HTML>
 <html>
   <head>
     <meta name="keywords" content="duckplay,srbija,arilje,filmovi,serije,uskoro,2018,itsnikola,designed by itsnikola,duck,play,noljbolji site za gledanje filmova,najbolji,site,za,gledanje,filmova">
@@ -38,7 +68,7 @@
        <form method="post">
 
          <label for="name">Ime</label>
-         <input type="text" id="fname" name="firstname" placeholder="Tvoje ime".." required>
+         <input type="text" id="fname" name="fname" placeholder="Tvoje ime".." required>
 
          <label for="email">E-mail</label>
          <input type="text" id="email" name="email" placeholder="Tvoja mail adresa" required>
